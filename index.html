@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" >
+</head>
+<body>
+    <header>
+        <div class="logo">VISUALIZER</div>
+        <nav>
+            <button class="navItems btn" id="bubbleSort">Bubble Sort</button>
+            <button class="navItems btn" id="insertionSort">Insertion Sort</button>
+            <button class="navItems startBtn" id='startVisulationBtn'>Start Visualization</button>
+            <button class="navItems btn" id="slowSpeed">Slow Speed</button>
+            <button class="navItems btn" id="fastSpeed">Fast Speed</button>
+        </nav>
+        <div class="randomNumbers"></div>
+        <button class="randomNumbersBtn">Generate Random Numbers</button>
+    </header>
+    <main>
+        <div class="reset-info">
+            <div id="nOfSwap"></div>
+            <div id="nOfComparision"></div>
+            <button class="randomNumbersBtn" id="resetBtn">Reset</button>
+        </div>
+        <div class="main">
+            <div class="grid"></div>
+            <div class="visualizationContainer"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="leftCol">Visualizer</div> 
+        <div>|</div>
+        <div class="rightCol">Sachin Bhattarai</div>
+    </footer>
+
+    <script src="./algorithms/quicksort.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

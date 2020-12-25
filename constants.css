@@ -1,0 +1,19 @@
+:root {
+  --backgroundColor: #e1d89f;
+  --white: #fcfcfc;
+
+  --darkText: #090302;
+  --lightText: #d3dad8;
+
+  --primaryColor: #116466;
+  --primaryColorLight: #618a84;
+  --secondaryColor: #5a2328;
+  --highlightColor: #15db95;
+
+  --largeText: 36px;
+  --header: 32px;
+  --subHeader: 28px;
+  --smallHeader: 21px;
+  --paragraph: 18px;
+  --smallText: 16px;
+}

@@ -1,0 +1,189 @@
+@import "./constants.css";
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Roboto", "Courier New", Courier, monospace;
+  color: var(--darkText);
+  font-size: var(--paragraph);
+}
+body {
+  background-color: var(--backgroundColor);
+}
+
+/* HEADER */
+header {
+  background-color: var(--primaryColor);
+  color: var(--lightText);
+}
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header .logo {
+  font-size: var(--header);
+}
+
+/* NAV */
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
+}
+header nav .navItems {
+  cursor: pointer;
+}
+header nav .navItems:hover {
+  color: var(--primaryColorLight);
+}
+header nav .navItems.btn {
+  background-color: transparent;
+  border: none;
+  color: var(--lightText);
+  font-size: var(--paragraph);
+  outline: none;
+  padding: 5px;
+}
+header nav .navItems.btn:disabled {
+  cursor: not-allowed;
+}
+
+/* START BTN */
+.startBtn {
+  border: 1px solid var(--primaryColorLight);
+  padding: 5px;
+  border-radius: 50px;
+  font-size: var(--smallHeader);
+  color: var(--highlightColor);
+  padding: 0px 10px;
+}
+.startBtn:disabled {
+  background-color: rgb(63, 59, 66);
+  cursor: not-allowed;
+}
+/* RANDOM NUMBERS */
+.randomNumbers {
+  font-size: 10px;
+  padding: 5px 10%;
+}
+.randomNumbersBtn {
+  border: 1px solid var(--primaryColorLight);
+  padding: 5px;
+  font-size: var(--smallHeader);
+  color: var(--lightText);
+  padding: 0px 10px;
+  background-color: var(--primaryColorLight);
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.randomNumbersBtn:hover {
+  background-color: var(--highlightColor);
+}
+.randomNumbersBtn:disabled {
+  background-color: rgb(63, 59, 66);
+  cursor: not-allowed;
+}
+/* MAIN */
+main {
+  background-color: var(--white);
+  margin: 0px 8%;
+}
+.main {
+  min-height: 85vh;
+  position: relative;
+}
+/* RESET / INFO */
+.reset-info {
+  background-color: #fff;
+  padding: 50px;
+  display: none;
+  text-align: center;
+}
+
+#resetBtn {
+  margin-top: 20px;
+}
+
+#nOfSwap,
+#nOfComparision {
+  font-weight: 100;
+}
+/* GRID */
+.main .grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+.gridRow {
+  display: flex;
+}
+.gridRow:last-child {
+  border-bottom: 1px solid var(--lightText);
+}
+.cell {
+  border: 1px solid var(--lightText);
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.cell:last-child {
+  border-right-color: var(--lightText);
+}
+
+/* VISUALIZATION */
+.visualizationContainer {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(calc(-50% - 2px));
+  padding: 10px 10px;
+}
+.visualizationWrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.visualLine {
+  width: 2px;
+  margin: 0px 0.5px;
+  background-color: var(--highlightColor);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primaryColorLight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+footer div:nth-child(2) {
+  font-weight: 100;
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+footer .leftCol {
+  font-size: var(--subHeader);
+}
+footer .rightCol {
+  font-size: var(--subHeader);
+  font-weight: 100;
+}
+
+/* Extras */
+
+.active.navItems.btn {
+  background-color: aliceblue;
+  padding: 5px;
+}
